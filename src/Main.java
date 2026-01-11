@@ -1,4 +1,5 @@
 import Animals.*;
+import Drinks.Drink;
 import Vehicles.Car;
 import Vehicles.Truck;
 import Vehicles.Vehicle;
@@ -16,6 +17,9 @@ public class Main {
         Car Mclaren = new Car("Mclaren Senna", true, 208);
         Truck Kenworth = new Truck("T680", false, 64);
 
+        Drink Cola = new Drink("Cola", false, true);
+        Drink Sprite = new Drink("Sprite", false, true);
+        Drink Water = new Drink("DA OCEAN", true, true);
 
         // IF SOMETHING REPEATS... WE CAN DO SOMETHING
 
@@ -40,5 +44,14 @@ public class Main {
         Kenworth.vehicleInfo();
         Kenworth.honked();
 
+
+        Cola.drinkData();
+        Cola.playerDrinked();
+
+        Sprite.drinkData();
+        Sprite.playerDrinked();
+
+        Water.drinkData();
+        Water.playerDrinked();
     }
 }
